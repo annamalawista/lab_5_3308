@@ -5,6 +5,7 @@ if [ ! -e "$1" ]; then
     exit
 fi
 sort -k3,3 -k2,2 -k1 "$1" | while read line; do
+    printf "here are some edits" 
     grade1=$( echo "$line" | cut -d " " -f4 )
     grade2=$( echo "$line" | cut -d " " -f5 )
     grade3=$( echo "$line" | cut -d " " -f6 )
@@ -14,4 +15,5 @@ sort -k3,3 -k2,2 -k1 "$1" | while read line; do
     first=$( echo "$line" | cut -d " " -f2 )
     last=$( echo "$line" | cut -d " " -f3 )
     printf "%s [%s] %s, %s\n" "$avg" "$ID" "$last" "$first"
+    printf "what? more edits!"
 done 
