@@ -1,4 +1,6 @@
 # lab_5_3308
 Anna Malawista
-Tyler Nevell
+
+Partner:Tyler Nevell
+
 Lab 5: Version Control
